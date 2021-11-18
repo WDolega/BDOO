@@ -1,0 +1,551 @@
+CREATE TABLE ot_rodzajmiejscowosci
+(
+    id text primary key,
+    nazwa text 
+);
+
+insert into ot_rodzajmiejscowosci (id, nazwa)
+values ('Ms','miasto');
+
+insert into ot_rodzajmiejscowosci (id, nazwa)
+values ('CMs','czescMiasta');
+
+insert into ot_rodzajmiejscowosci (id, nazwa)
+values ('Ws','wies');
+
+insert into ot_rodzajmiejscowosci (id, nazwa)
+values ('CWs','czescWsi');
+
+insert into ot_rodzajmiejscowosci (id, nazwa)
+values ('Kl','kolonia');
+
+insert into ot_rodzajmiejscowosci (id, nazwa)
+values ('CKl','czescKolonii');
+
+insert into ot_rodzajmiejscowosci (id, nazwa)
+values ('Osd','osada');
+
+insert into ot_rodzajmiejscowosci (id, nazwa)
+values ('COsd','czescOsady');
+
+insert into ot_rodzajmiejscowosci (id, nazwa)
+values ('Osl','osiedle');
+
+insert into ot_rodzajmiejscowosci (id, nazwa)
+values ('Prz','przysiolek');
+
+insert into ot_rodzajmiejscowosci (id, nazwa)
+values ('Ls','lesniczowka');
+
+insert into ot_rodzajmiejscowosci (id, nazwa)
+values ('Gj','gajowka');
+
+insert into ot_rodzajmiejscowosci (id, nazwa)
+values ('Inn','InnyObiekt');
+
+CREATE TABLE ot_rodzajjednostkiadministracyjnej
+(
+    id text primary key,
+    nazwa text 
+);
+
+insert into ot_rodzajjednostkiadministracyjnej (id, nazwa)
+values ('Pns','panstwo');
+
+insert into ot_rodzajjednostkiadministracyjnej (id, nazwa)
+values ('Woj','wojewodztwo');
+
+insert into ot_rodzajjednostkiadministracyjnej (id, nazwa)
+values ('Pow','powiat');
+
+insert into ot_rodzajjednostkiadministracyjnej (id, nazwa)
+values ('GM','gminaMiejska');
+
+insert into ot_rodzajjednostkiadministracyjnej (id, nazwa)
+values ('GW','gminaWiejska');
+
+insert into ot_rodzajjednostkiadministracyjnej (id, nazwa)
+values ('Gmw','gminaMiejskoWiejska');
+
+insert into ot_rodzajjednostkiadministracyjnej (id, nazwa)
+values ('CmG','miastoWGminieMiejskoWiejskiej');
+
+insert into ot_rodzajjednostkiadministracyjnej (id, nazwa)
+values ('CwG','obszarWiejskiWGminieMiejskoWiejskiej');
+
+insert into ot_rodzajjednostkiadministracyjnej (id, nazwa)
+values ('Dzl','dzielnica');
+
+insert into ot_rodzajjednostkiadministracyjnej (id, nazwa)
+values ('Dlg','delegatura');
+
+CREATE TABLE ot_katdokladnosci
+(
+    id text primary key,
+    nazwa text 
+);
+
+insert into ot_katdokladnosci (id, nazwa)
+values ('Dok','dokładny');
+
+insert into ot_katdokladnosci (id, nazwa)
+values ('Prz','przybliżony');
+
+insert into ot_katdokladnosci (id, nazwa)
+values ('Npw','niepewny');
+
+CREATE TABLE ot_zrodlodanych
+(
+    id text primary key,
+    nazwa text 
+);
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('GEOS','bazaDanychGeodezyjnychGrawimetrycznych');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('EGiB','ewidencjaGruntowIBudynkow');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('GESUT','geodezyjnaEwidencjaSieciUzbrojeniaTerenu');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('PRG','bazaDanychPanstwowegoRejestruGranic');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('PRNG','panstwowyRejestrNazwGeograficznych');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('EMUiA','ewidencjaMiejscowosciUlicIAdresow');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('RCiWN','rejestrCenIWartosciNieruchomosci');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('BDO','bazaDanychOgolnogeograficznycch');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('Ort','ortofotomapa');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('Mz','mapazZasadnicza');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('Mtp10','mapaTopograficzna10k');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('Mtp50','mapaTopograficzna50k');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('VMAPL2_v1','vmapLevel2PierwszejEdycji');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('VMAPL2_v2','vmapLevel2DrugiejEdycji');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('TBD','bazaDanychTopograficznych');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('CORINE','bazaDanychCLC');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('CRFOP','centralnyRejestrFormOchronyPrzyrody');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('BDD','bankDanychDrogowych');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('BDOT500','bazaDanychWglnstrK1');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('KSOCH','krajowySystemObszarowChronionych');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('LMN','lesnaMapaNumeryczna');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('MPHP','mapaPodzialuHydrograficznegoPolski');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('PKP','bazaDanychPKP');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('RZAB','rejestrZabytkow');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('TERYT','krajowyRejestrUrzedowyPodzialuTerytorialnegoKraju');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('Str','pomiarStereoskopowy');
+
+insert into ot_zrodlodanych (id, nazwa)
+values ('Tm','pomiarTerenowy');
+
+CREATE TABLE ot_rodzajreprgeom
+(
+    id text primary key,
+    nazwa text 
+);
+
+insert into ot_rodzajreprgeom (id, nazwa)
+values ('SG','srodekGeometryczny');
+
+insert into ot_rodzajreprgeom (id, nazwa)
+values ('MC','miejsceCharakterystyczne');
+
+insert into ot_rodzajreprgeom (id, nazwa)
+values ('PU','punktUmowny');
+
+insert into ot_rodzajreprgeom (id, nazwa)
+values ('OG','osGeometryczna');
+
+insert into ot_rodzajreprgeom (id, nazwa)
+values ('OI','osInterpolowana');
+
+insert into ot_rodzajreprgeom (id, nazwa)
+values ('LU','liniaUmowna');
+
+insert into ot_rodzajreprgeom (id, nazwa)
+values ('SL','sztucznyLacznik');
+
+insert into ot_rodzajreprgeom (id, nazwa)
+values ('KR','krawedz');
+
+insert into ot_rodzajreprgeom (id, nazwa)
+values ('ZP','zarysPodstawy');
+
+insert into ot_rodzajreprgeom (id, nazwa)
+values ('ZU','zasiegUmowny');
+
+insert into ot_rodzajreprgeom (id, nazwa)
+values ('MA','maksymalnyZasieg');
+
+insert into ot_rodzajreprgeom (id, nazwa)
+values ('MI','minimalnyZasieg');
+
+insert into ot_rodzajreprgeom (id, nazwa)
+values ('SZ','sredniZasieg');
+
+create table ot_adms_a
+(
+	lokalnyid text primary key,
+	przestrzennazw text, 
+	wersjaid varchar(100),
+	czyobiektbdoo boolean,
+	x_kod text,
+	x_katdoklgeom text references ot_katdokladnosci(id) not null,
+	x_doklgeom numeric(50),
+	x_zrodlodanychg text references ot_zrodlodanych(id) not null,
+	x_zrodlodanycha text references ot_zrodlodanych(id) not null,
+	x_rodzajreprgeom text references ot_rodzajreprgeom(id) not null,
+	x_uwagi varchar(100),
+	x_uzytkownik text,
+	x_aktualnoscg date,
+	x_aktualnosca date, 
+	koniecwersjiobiektu date,
+	poczatekwersjiobiektu date,
+	data_utworzenia date,
+	x_informdodatkowa varchar(100),
+	nazwa text,
+	idprng text, 
+	idterytgmi text not null,
+	liczba_mieszkancow integer,
+	rodzaj text references ot_rodzajmiejscowosci(id) not null,
+	siedziba_urzedu_gminy boolean,
+	geom geometry('Polygon', 2180),
+	id_adms_a text
+);
+
+create table ot_adja_a
+(
+	lokalnyid text primary key,
+	przestrzennazw text, 
+	wersjaid varchar(100),
+	czyobiektbdoo boolean,
+	x_kod text,
+	x_katdoklgeom text references ot_katdokladnosci(id) not null,
+	x_doklgeom numeric(50),
+	x_zrodlodanychg text references ot_zrodlodanych(id) not null,
+	x_zrodlodanycha text references ot_zrodlodanych(id) not null,
+	x_rodzajreprgeom text references ot_rodzajreprgeom(id) not null,
+	x_uwagi varchar(100),
+	x_uzytkownik text,
+	x_aktualnoscg date,
+	x_aktualnosca date, 
+	koniecwersjiobiektu date,
+	poczatekwersjiobiektu date,
+	data_utworzenia date,
+	x_informdodatkowa varchar(100),
+	nazwa text,
+	idprg text, 
+	idteryrterc text,
+	idterytjednostkinadrzednej varchar(100),
+	rodzaj text references ot_rodzajjednostkiadministracyjnej(id) not null,
+	geom geometry('Polygon', 2180),
+	id_adja_a text
+);
+
+create table ot_adms_p
+(
+	lokalnyid text primary key,
+	przestrzennazw text, 
+	wersjaid varchar(100),
+	czyobiektbdoo boolean,
+	x_kod text,
+	x_katdoklgeom text references ot_katdokladnosci(id) not null,
+	x_doklgeom numeric(50),
+	x_zrodlodanychg text references ot_zrodlodanych(id) not null,
+	x_zrodlodanycha text references ot_zrodlodanych(id) not null,
+	x_rodzajreprgeom text references ot_rodzajreprgeom(id) not null,
+	x_uwagi varchar(100),
+	x_uzytkownik text,
+	x_aktualnoscg date,
+	x_aktualnosca date, 
+	koniecwersjiobiektu date,
+	poczatekwersjiobiektu date,
+	data_utworzenia date,
+	x_informdodatkowa varchar(100),
+	nazwa text,
+	idprng text, 
+	idterytgmi text,
+	liczba_mieszkancow integer,
+	rodzaj text references ot_rodzajmiejscowosci(id) not null,
+	siedziba_urzedu_gminy boolean,
+	geom geometry('Point', 2180)
+);
+
+alter table ot_adms_a 
+add constraint adms_idadms_fkey foreign key (id_adms_a)
+references ot_adms_a (lokalnyid)
+match simple 
+on update no action
+on delete no action;
+
+alter table ot_adja_a 
+add constraint adja_idadja_fkey foreign key (id_adja_a)
+references ot_adja_a (lokalnyid)
+match simple 
+on update no action
+on delete no action;
+
+create materialized view mv_ot_adms_a as 
+select
+a.lokalnyid,
+a.geom,
+a.nazwa,
+a.rodzaj,
+a.x_katdoklgeom,
+a.x_zrodlodanychg,
+a.x_zrodlodanycha,
+a.x_rodzajreprgeom,
+m.nazwa as rodz_miejsc,
+k.nazwa as kat_dokl,
+zg.nazwa as zrodlo_danychg,
+za.nazwa as zrodlo_danycha,
+r.nazwa as repr_geom
+from ot_adms_a as a 
+left join ot_rodzajmiejscowosci as m 
+on a.rodzaj = m.id
+left join ot_katdokladnosci as k 
+on a.x_katdoklgeom = k.id 
+left join ot_zrodlodanych as zg 
+on a.x_zrodlodanychg = zg.id
+left join ot_zrodlodanych as za
+on a.x_zrodlodanycha = za.id
+left join ot_rodzajreprgeom as r 
+on a.x_rodzajreprgeom = r.id
+with data;
+
+create materialized view mv_ot_adja_a as 
+select
+a.lokalnyid,
+a.geom,
+a.nazwa,
+a.rodzaj,
+a.x_katdoklgeom,
+a.x_zrodlodanychg,
+a.x_zrodlodanycha,
+a.x_rodzajreprgeom,
+j.nazwa as rodz_jed_adm,
+k.nazwa as kat_dokl,
+zg.nazwa as zrodlo_danychg,
+za.nazwa as zrodlo_danycha,
+r.nazwa as repr_geom
+from ot_adja_a as a 
+left join ot_rodzajjednostkiadministracyjnej as j 
+on a.rodzaj = j.id
+left join ot_katdokladnosci as k 
+on a.x_katdoklgeom = k.id 
+left join ot_zrodlodanych as zg 
+on a.x_zrodlodanychg = zg.id
+left join ot_zrodlodanych as za
+on a.x_zrodlodanycha = za.id
+left join ot_rodzajreprgeom as r 
+on a.x_rodzajreprgeom = r.id
+with data;
+
+create unique index mvadmsa_id_idx on mv_ot_adms_a(lokalnyid);
+create index mvadmsa_geom_idx on mv_ot_adms_a using gist(geom);
+
+create unique index mvadjaa_id_idx on mv_ot_adja_a(lokalnyid);
+create index mvadjaa_geom_idx on mv_ot_adja_a using gist(geom);
+
+create table v_ot_adms_a (like ot_adms_a including all); 
+
+create table v_ot_adja_a (like ot_adja_a including all); 
+
+alter table v_ot_adms_a 
+add constraint v_adms_idadms_fkey foreign key (id_adms_a)
+references v_ot_adms_a (lokalnyid)
+match simple 
+on update no action
+on delete no action;
+
+alter table v_ot_adja_a 
+add constraint v_adja_idadja_fkey foreign key (id_adja_a)
+references v_ot_adja_a (lokalnyid)
+match simple 
+on update no action
+on delete no action;
+
+create materialized view mv_v_ot_adms_a as 
+select
+a.lokalnyid,
+a.geom,
+a.nazwa,
+a.rodzaj,
+a.x_katdoklgeom,
+a.x_zrodlodanychg,
+a.x_zrodlodanycha,
+a.x_rodzajreprgeom,
+m.nazwa as rodz_miejsc,
+k.nazwa as kat_dokl,
+zg.nazwa as zrodlo_danychg,
+za.nazwa as zrodlo_danycha,
+r.nazwa as repr_geom
+from v_ot_adms_a as a 
+left join ot_rodzajmiejscowosci as m 
+on a.rodzaj = m.id
+left join ot_katdokladnosci as k 
+on a.x_katdoklgeom = k.id 
+left join ot_zrodlodanych as zg 
+on a.x_zrodlodanychg = zg.id
+left join ot_zrodlodanych as za
+on a.x_zrodlodanycha = za.id
+left join ot_rodzajreprgeom as r 
+on a.x_rodzajreprgeom = r.id
+with data;
+
+create materialized view mv_v_ot_adja_a as 
+select
+a.lokalnyid,
+a.geom,
+a.nazwa,
+a.rodzaj,
+a.x_katdoklgeom,
+a.x_zrodlodanychg,
+a.x_zrodlodanycha,
+a.x_rodzajreprgeom,
+j.nazwa as rodz_jed_adm,
+k.nazwa as kat_dokl,
+zg.nazwa as zrodlo_danychg,
+za.nazwa as zrodlo_danycha,
+r.nazwa as repr_geom
+from v_ot_adja_a as a 
+left join ot_rodzajjednostkiadministracyjnej as j 
+on a.rodzaj = j.id
+left join ot_katdokladnosci as k 
+on a.x_katdoklgeom = k.id 
+left join ot_zrodlodanych as zg 
+on a.x_zrodlodanychg = zg.id
+left join ot_zrodlodanych as za
+on a.x_zrodlodanycha = za.id
+left join ot_rodzajreprgeom as r 
+on a.x_rodzajreprgeom = r.id
+with data;
+
+create unique index mvvadmsa_id_idx on mv_v_ot_adms_a(lokalnyid);
+create index mvvadmsa_geom_idx on mv_v_ot_adms_a using gist(geom);
+
+create unique index mvvadjaa_id_idx on mv_v_ot_adja_a(lokalnyid);
+create index mvvadjaa_geom_idx on mv_v_ot_adja_a using gist(geom);
+
+create or replace function export() returns trigger as
+$$
+begin 
+	insert into v_ot_adms_a values((OLD).*);
+	return OLD;
+end;
+$$
+language plpgsql volatile cost 100;
+
+create trigger export_adms
+	before delete 
+	on ot_adms_a
+	for each row
+	execute procedure export();
+	
+create or replace function export2() returns trigger as
+$$
+begin 
+	insert into v_ot_adja_a values((OLD).*);
+	return OLD;
+end;
+$$
+language plpgsql volatile cost 100;
+
+create trigger export_adja
+	before delete 
+	on ot_adja_a
+	for each row
+	execute procedure export2();
+
+create or replace function generalize(rodzaj_ja ot_rodzajjednostkiadministracyjnej, vertex_numb double precision) 
+	returns text as $$
+declare
+-- stworzenie kursora
+	curs_geom cursor(rodzaj_ja ot_rodzajjednostkiadministracyjnej) for
+				select j.geom as geometria,
+				j.idprg as prg_id,
+				j.nazwa as name
+				from ot_adja_a as j
+				where j.rodzaj = rodzaj_ja;
+rec_vertex record;
+-- deklaracja zmiennych
+g_polygon geometry('Polygon', 2180);
+parameter double precision;
+cur_vertex double precision;
+simp double precision;
+begin
+    drop table if exists tabela_zgeneralizowanych;
+	create table tabela_zgeneralizowanych
+	(
+		id serial primary key, 
+		idprg text,
+		nazwa text,
+		geom geometry('Polygon', 2180),
+		parametr double precision
+	); 
+
+	open curs_geom(rodzaj);
+	loop
+		fetch curs_geom into rec_vertex;
+		exit when not found;
+		parameter := vertex_numb;
+		cur_vertex := 0;
+		simp := 0.1;
+		while cur_vertex != parameter loop
+			g_polygon := ST_Simplify(geometria, simp);
+			cur_vertex := select ST_NPoints(g_polygon);
+			simp := simp + 0.1;
+		end loop;
+		insert into tabela_zgeneralizowanych(idprg, nazwa, geom, parametr)
+		values (prg_id, name, g_polygon, parameter);
+	end loop;	
+	close curs_geom;
+	return 'Udało się';
+	except other 
+	raise 'ERROR';
+end;
+$$
+language plpgsql;
